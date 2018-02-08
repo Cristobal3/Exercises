@@ -66,4 +66,40 @@ for x in range(len(list)):
     list3 += [list[x]*list2[x]]
 print(list3)
 
+#Problem 9
+a = [[1,3],[2,4]]
+b = [[5,2],[1,0]]
+c = [[],[]]
+
+for j in range(len(a)):
+    for k in range(len(a)):
+        c[j]+= [a[j][k] + b[j][k]]
+
+print(c)
+
+#Problem 10
+a = [[1,3],[2,4]]
+b = [[5,2],[1,0]]
+c = [[],[]]
+
+for j in range(len(a)):
+    for k in range(len(a)):
+        c[j]+= [a[j][k] + b[j][k]]
+
+print(c)
+
+# Problem 11
+a = [1,3,2,4]
+c = []
+
+for j in range(len(a)):
+    if j < len(a):
+        if a[j] == a[j+1]:
+            b=0
+        else:
+            c += 
+    
+
+print(c)
+
 
