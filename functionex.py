@@ -93,7 +93,19 @@ def choice():
         print('Please answer Y or N')
 choice()
 '''
-
+#Problem 9
+def choice():
+    ch = input('Do you want to play again?[Y or N] ').upper()
+    if ch == 'Y':
+        print('True')
+        return True
+    elif ch == 'N':
+        print('False')
+        return False
+    else:
+        print('Invalid input')
+        choice()
+choice()
 
 
 
