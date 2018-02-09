@@ -1,2 +1,4 @@
-import scall
-square.scall(100,y,'azure')
+import shapes2
+shapes2.square(100, 'y', 'green')
+
+shapes2.draw()

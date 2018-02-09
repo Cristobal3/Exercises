@@ -4,9 +4,10 @@ speed(9)
 shape('turtle')
 
 def square(size, fill, color):
-    pencolor(str(color))
+    pencolor(color)
     if fill == 'y':
         begin_fill()
+        fillcolor(color)
         for x in list(range(4)):
             forward(size)
             right(90)
@@ -17,22 +18,24 @@ def square(size, fill, color):
             right(90)
 
 def triangle(size, fill, color):
-    pencolor(str(color))
+    pencolor(color)
     if fill == 'y':
         begin_fill()
+        fillcolor(color)
         for x in list(range(3)):
             right(120)
             forward(size)
         end_fill()
     else:
         for x in list(range(3)):
-        right(120)
-        forward(size)
+            right(120)
+            forward(size)
 
 def star(size, fill, color):
-    pencolor(str(color))
-    if fill == 'y'
+    pencolor(color)
+    if fill == 'y':
         begin_fill()
+        fillcolor(color)
         for x in list(range(5)):
             forward(size)
             right(180-36)
@@ -45,23 +48,50 @@ def star(size, fill, color):
             forward(size)
     
 
-def pentagon():
-    for x in list(range(5)):
-        forward(100)
-        right(360/5)
+def pentagon(size, fill, color):
+    pencolor(color)
+    if fill == 'y':
+        begin_fill()
+        fillcolor(color)
+        for x in list(range(5)):
+            forward(size)
+            right(360/5)
+        end_fill()
+    else:
+        for x in list(range(5)):
+            forward(size)
+            right(360/5)
+        
+
     
 
-def octagon():
-    for x in list(range(8)):
-        forward(100)
-        right(360/8)
-    
+def octagon(size, fill, color):
+    pencolor(color)
+    if fill == 'y':
+        begin_fill()
+        fillcolor(color)
+        for x in list(range(8)):
+            forward(size)
+            right(360/8)
+        end_fill()
+    else:
+        for x in list(range(8)):
+            forward(size)
+            right(360/8)
+        
 
-circle(100)
+
+    
+'''
+circle(size)
 square()
 triangle()
 pentagon()
 octagon()
 star()
-mainloop()
+'''
+
+def draw():
+    mainloop()
+    
 
