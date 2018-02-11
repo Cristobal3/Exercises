@@ -1,4 +1,4 @@
-
+'''
 #Problem 1
 list = [1,9,3,4]
 suml = 0
@@ -87,19 +87,20 @@ for j in range(len(a)):
         c[j]+= [a[j][k] + b[j][k]]
 
 print(c)
-
+'''
 # Problem 11
-a = [1,3,2,4]
-c = []
+a = [1,3,2,2,4]
+b = []
+c = ''
 
 for j in range(len(a)):
-    if j < len(a):
-        if a[j] == a[j+1]:
-            b=0
-        else:
-            c += 
-    
+    if a[j] == c:
+        c = a[j]
+    else:
+        b.extend([a[j]])
+        c = a[j]
 
-print(c)
+     
+print(b)
 
 
