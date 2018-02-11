@@ -41,12 +41,19 @@ print('   *   ')
 print('  ***  ')
 print(' ***** ')
 print('*******')
-'''
+
 
 #Problem 8
-h = int(input('Height of the triangle? ')
-for x in range(1,h):
+h = int(input('Height of the triangle? '))
+for x in range(1,h+1):
     print(' '*(h-x) + '*' * x + '*' * (x-1)+ ' '*(h-x) )
+'''
+#Problem 9
+x = range(1,11)
+for y in x:
+    for z in x:
+        mu = y * z
+        print(y,' X ',z, ' = ',mu)
 
 
  
