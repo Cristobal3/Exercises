@@ -33,23 +33,23 @@ email = ramit['email']
 interest1 = ramit['friends'][0]
 jas_email = ramit['friends'][0]['email']
 interest2 = ramit['friends'][1]
-
+'''
 #Problem 3
 def letter_histogram(word):
+    word = word.lower()
     d = {}
     p = ''
     for x in range(len(word)):
-        if word[x] == p:
+        if d.get(word[x], 'new') != 'new':
             d[word[x]] += 1
-            p = word[x]
         else:
             d[word[x]] = 1
-            p = word[x]
     print(d)
-letter_histogram('green')
-'''
+
+
 #Problem 4
 def word_histogram(word):
+    word = word.lower()
     d = {}
     p = ''
     for x in range(len(word)):
@@ -65,12 +65,10 @@ def word_histogram(word):
         if x == len(word) -1:
             if d.get(p, 'new') == 'new':
                 d[p] = 1
-                p = ''
             else:
                 d[p] += 1
-                p= ''
     print(d)
-word_histogram('to be or not to be')
+
 
 
 
