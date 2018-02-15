@@ -19,10 +19,10 @@ class Person:
         print('{}\'s email is {}, {}\'s phone number: {}'.format(self.name, self.email, self.name, self.phone))
     
     def add_friend(self,friend):
-        jordan.friends.append(friend.name)
+        self.friends.append(friend.name)
     
     def num_friends(self):
-        print(len(jordan.friends))
+        print(len(self.friends))
     
 
 
@@ -32,8 +32,8 @@ jordan = Person('Jordan', 'jordan@aol.com', '495-586-3456')
 
 sonny.greet(jordan)
 jordan.greet(sonny)
-print('Contact info of {} is {} and {}'.format(sonny.name, sonny.email, sonny.phone))
-print('Contact info of {} is {} and {}'.format(jordan.name, jordan.email, jordan.phone))
+sonny.add_friend(jordan)
+sonny.num_friends()
 
 #Prblem 2
 class Vehicle:

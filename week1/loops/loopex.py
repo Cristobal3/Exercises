@@ -55,7 +55,6 @@ for y in x:
         mu = y * z
         print(y,' X ',z, ' = ',mu)
 
-
  
 
 
